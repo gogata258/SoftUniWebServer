@@ -1,0 +1,30 @@
+﻿<h1>Register</h1>
+<form method="post">
+	<div>
+		<small>Full Name</small>
+		<input type="text" name="fullname" placeholder="Full Name" required/>
+	</div>
+	<div>
+		<small>Username</small>
+		<input type="text" name="username" minLength="8" placeholder="Username" required/>
+	</div>
+	<div>
+		<small>Password</small>
+		<input type="password" name="password" minLength="8" placeholder="Password" required/>
+	</div>
+	<div>
+		<small>Repeat Password</small>
+		<input type="password" name="passwordRepeat" minLength="8" placeholder="Retype Password" required/>
+	</div>
+	<div>
+		<input type="submit" value="Register" />
+	</div>
+</form>
+
+<div style="display: {{{showError}}}; color: red">
+	{{{error}}}
+</div>
+
+<form method="get" action="/login">
+	<input type="submit" value="Login"/>
+</form>

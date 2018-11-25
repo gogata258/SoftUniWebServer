@@ -1,0 +1,20 @@
+﻿<form method='post'>
+	<div>
+		<small>Name</small>
+		<input type='text' name='name' required />
+	</div>
+	<div>
+		<small>Price</small>
+		<input type='number' step='any' name='price' required />
+	</div>
+	<div>
+		<small>Image Url</small>
+		<input type='text' name='url' required />
+	</div>
+	<div><input type='submit' value='submit' /></div>
+</form>
+<div style="display: {{{showResult}}}">
+	<p>Name: {{{name}}}</p>
+	<p>Price: {{{price}}}</p>
+	<p><img src="{{{url}}}" alt="{{{name}}}" width="400"/></p>
+</div>

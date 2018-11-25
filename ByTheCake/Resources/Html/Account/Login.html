@@ -1,0 +1,23 @@
+﻿
+<h1>Login</h1>
+<form method='post'>
+	<div>
+		<small>Username</small>
+		<input name='username' type='text' placeholder="Username" required/>
+	</div>
+	<div>
+		<small>Password</small>
+		<input name='password' type='password' placeholder="Password" required />
+	</div>
+	<div>
+		<input type='submit' value='Submit' />
+	</div>
+</form>
+
+<div style="display: {{{showError}}}; color: red">
+	{{{error}}}
+</div>
+
+<form method="get" action="/register">
+	<input type="submit" value="Register" />
+</form>

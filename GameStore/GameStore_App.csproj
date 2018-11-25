@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Html\Account\Login.html" />
+    <None Remove="Resources\Html\Account\Register.html" />
+    <None Remove="Resources\Html\Account\RegisterError.html" />
+    <None Remove="Resources\Html\Shopping\Cart.html" />
+    <None Remove="Resources\Html\Game\AllGames.html" />
+    <None Remove="Resources\Html\Game\GameAdd.html" />
+    <None Remove="Resources\Html\Game\GameDelete.html" />
+    <None Remove="Resources\Html\Game\GameDetails.html" />
+    <None Remove="Resources\Html\Game\GameEdit.html" />
+    <None Remove="Resources\Html\Home\Index.html" />
+    <None Remove="Resources\Html\Layout.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Html\Account\Login.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Html\Account\Register.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Html\Account\RegisterError.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Html\Shopping\Cart.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Html\Game\AllGames.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Html\Game\GameAdd.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Html\Game\GameDelete.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Html\Game\GameDetails.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Html\Game\GameEdit.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Html\Home\Index.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Html\Layout.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\CommonLib.csproj" />
+    <ProjectReference Include="..\GameStore_DAL\GameStore_DAL.csproj" />
+    <ProjectReference Include="..\GameStore_Model\GameStore_Model.csproj" />
+    <ProjectReference Include="..\Server\Server.csproj" />
+  </ItemGroup>
+
+</Project>

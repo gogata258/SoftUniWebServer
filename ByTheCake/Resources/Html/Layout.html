@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<meta charset='utf-8' />
+	<meta name='description' content='Buy the cake in By the Cake' />
+	<meta name='keywords' content='cake, buy' />
+	<meta name='author' content='George Anastasov' />
+	<title>By The Cake</title>
+</head>
+<body>
+	<div style="display: {{{showError}}}; color: red">
+		{{{error}}}
+	</div>
+	<form style="display: {{{authDisplay}}}" method="get" action="/logout">
+		<input type="submit" value="Logout" />
+	</form>
+	<form style="display: {{{authDisplay}}}" method="get" action="/">
+		<input type="submit" value="Back to home" />
+	</form>
+	<br />
+	{{{content}}}
+	<hr />
+	<footer style="text-align: center">
+		&copy;All Rights Reserved
+	</footer>
+</body>
+</html>
